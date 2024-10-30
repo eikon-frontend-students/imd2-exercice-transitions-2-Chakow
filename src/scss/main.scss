@@ -102,5 +102,105 @@ video {
 }
 
 // ---------------------------------------------
-// Votre code ici :
+.marker {
+  .product-cart {
+    opacity: 0%;
+    transition-duration: 0.3s;
+  }
+}
+.marker:hover .product-cart {
+  opacity: 100%;
+}
+.marker .product-cart:hover {
+  background: var(--blue);
+}
+
+.pencil {
+  .product-cart {
+    opacity: 0%;
+    transition-duration: 0.3s;
+    transform: translateY(-30px);
+  }
+}
+.pencil:hover .product-cart {
+  opacity: 100%;
+  transform: translateY(30px);
+}
+.pencil .product-cart:hover {
+  background: var(--blue);
+}
+.scissors {
+  transition-duration: 1s;
+}
+.scissors:hover {
+  background: var(--blue);
+  color: white;
+}
+.sketchbook {
+  img {
+    transition-duration: 0.3s;
+  }
+}
+.sketchbook .product-image {
+  overflow: hidden;
+}
+.sketchbook:hover {
+  img {
+    transform: scale(130%);
+  }
+}
+
+.glue {
+  img {
+    transition-duration: 0.3s;
+    filter: blur(4px);
+  }
+}
+.glue .product-image {
+  overflow: hidden;
+}
+.glue:hover {
+  img {
+    filter: blur(0px);
+  }
+}
+
+.share {
+  .share-list {
+    .share-icon:nth-child(1) {
+      transition-delay: 0s;
+      opacity: 0%;
+      transition-duration: 0.5s;
+      transform: translateY(-30px);
+    }
+    .share-icon:nth-child(2) {
+      transition-delay: 0.2s;
+      opacity: 0%;
+      transition-duration: 0.5s;
+      transform: translateY(-30px);
+    }
+    .share-icon:nth-child(3) {
+      transition-delay: 0.4s;
+      opacity: 0%;
+      transition-duration: 0.5s;
+      transform: translateY(-30px);
+    }
+  }
+}
+.share:hover {
+  .share-list {
+    .share-icon:nth-child(1) {
+      opacity: 100%;
+      transform: translateY(0px);
+    }
+    .share-icon:nth-child(2) {
+      opacity: 100%;
+      transform: translateY(0px);
+    }
+    .share-icon:nth-child(3) {
+      opacity: 100%;
+      transform: translateY(0px);
+    }
+  }
+}
 // ---------------------------------------------
